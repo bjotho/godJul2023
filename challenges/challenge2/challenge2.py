@@ -23,7 +23,7 @@ file2_content = get_file_content(Path(f"{__file__}").parent.joinpath("file2"))
 file3_content = get_file_content(Path(f"{__file__}").parent.joinpath("file3"))
 file4_content = get_file_content(Path(f"{__file__}").parent.joinpath("file4"))
 
-for n, content in enumerate((file1_content, file2_content, file3_content, file4_content)):
+for n, content in enumerate((file1_content, file2_content, file3_content, file4_content), start=1):
     print(f"file{n}_{content = }")
 
 print("")

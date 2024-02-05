@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import librosa
 import matplotlib.pyplot as plt
 import numpy as np
@@ -10,7 +12,10 @@ def show_spectrogram(soundfile: str) -> None:
 
     :param soundfile: String containing a soundfile name or path to a sound file.
     """
-    soundfile = handle_file(file=soundfile, python_module=__file__)
+    soundfile = handle_file(file=soundfile, python_module=Path(__file__))
+    if soundfile is None:
+        return
+
     data, samplerate = librosa.load(soundfile)
 
     data_stft = librosa.stft(data)

@@ -2,3 +2,4 @@ Pillow
 librosa
 matplotlib
 colorama
+PyQt5

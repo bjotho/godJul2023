@@ -6,21 +6,27 @@ og finne informasjon, og kanskje det skjuler seg en belønning hvis du klarer å
 
 God jul!
 
-
 # Oppsett
 
 Jeg anbefaler å bruke PC. Du trenger disse verktøyene for å komme i gang:
 
 - [git](https://github.com/git-guides/install-git)
-- [Python 3](https://www.python.org/downloads/)
-- [PyCharm (Community Edition)](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows)
+- [Python 3.11](https://www.python.org/downloads/release/python-3117/) (Scroll ned og velg en installasjonsfil
+  under ``Files`` seksjonen, f.eks. for Windows, velg ``Windows installer (64-bit)``).
+  ***NB:*** For Windows, huk av ``Add python.exe to PATH`` (se bilde under)
+- [PyCharm (Community Edition)](https://www.jetbrains.com/pycharm/download) (Scroll ned for å laste ned PyCharm
+  Community Edition)
+
+![python_path](data/python_path.png "python_path")
 
 PyCharm basics: [https://www.youtube.com/watch?v=HHcZbXsZtm0](https://www.youtube.com/watch?v=HHcZbXsZtm0)
+
+Python basics (optional): [https://www.youtube.com/watch?v=woVJ4N5nl_s](https://www.youtube.com/watch?v=woVJ4N5nl_s)
 
 For å sette i gang, last ned dette git repo'et. Kopier inn i kommandolinjen:
 
 ```
-git clone git@github.com:bjotho/godJul2023.git
+git clone https://github.com/bjotho/godJul2023.git
 ```
 
 Lag et virtuelt python miljø i repo'et (eller åpne PyCharm og følg instruksjoner der):

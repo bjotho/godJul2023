@@ -152,5 +152,6 @@ def extract_jpg_data(jpg_filename: str, out_file: str = "embedded.png", byte_pos
             new_img.save(out_file)
     except PIL.UnidentifiedImageError:
         print(yellow(f"Unable to extract data from byte position '{byte_position}' in jpg file."))
+        return
 
     print(green(f"Successfully extracted data from '{jpg_filename}', and saved result in '{out_file}'."))

@@ -1,12 +1,11 @@
 from pathlib import Path
+from string import digits, ascii_lowercase, ascii_uppercase
 from typing import Any, Callable, Collection, Dict, Iterator, List, Optional
 
 try:
     from utils.text_formatting import yellow
 except ModuleNotFoundError:
     from text_formatting import yellow
-
-from string import digits, ascii_lowercase, ascii_uppercase
 
 
 ALPHABET = f"{ascii_uppercase}{ascii_lowercase}{digits}+/"
